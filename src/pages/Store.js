@@ -7,6 +7,7 @@ const Store = () => {
     const storedItems = localStorage.getItem('items');
     return storedItems ? JSON.parse(storedItems) : [];
   });
+  console.log('hiii')
   const [newStoreName, setNewStoreName] = useState("");
   const [newStoreImage, setNewStoreImage] = useState("");
   const [editItemId, setEditItemId] = useState(null);
